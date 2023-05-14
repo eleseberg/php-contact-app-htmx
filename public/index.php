@@ -7,8 +7,10 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-$app->get('/', function (Request $request, Response $response, $args) {
-    $response->getBody()->write("Hello world!");
+$app->redirect('/', '/contacts', 301);
+
+$app->get('/contacts', function (Request $request, Response $response, $args) {
+    $response->getBody()->write("Hello contacts!");
     return $response;
 });
 
