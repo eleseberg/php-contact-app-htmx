@@ -34,5 +34,6 @@ This project is licensed under the GNU GPLv3 License - see the LICENSE.md file f
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
+* [Original Python code](https://github.com/bigskysoftware/contact-app)
 * [Hypermedia Systems](https://hypermedia.systems/)
 * [htmx](https://htmx.org/)
