@@ -61,7 +61,7 @@ class Contacts
 
         // Check if JSON decoding was successful
         if ($data === null) {
-            throw new \Exception('Error decoding JSON data.');
+            throw new \Exception('Error decoding JSON data from ' . $this->filePath);
         } else {
             // Use the $data array as needed
             $this->contactList = $data;
