@@ -19,9 +19,22 @@ $app->add(TwigMiddleware::create($app, $twig));
 $app->redirect('/', '/contacts', 301);
 
 $app->get('/contacts', function (Request $request, Response $response, $args) {
+
+    $contacts = new App\model\Contacts();
+    $searchTerm = '';
+    $queryTerms = $request->getQueryParams();
+
+    if (array_key_exists('q', $queryTerms)) {
+        $searchTerm = $queryTerms['q'];
+        $contactsSet = $contacts->search($searchTerm);
+    } else {
+        $contactsSet = $contacts->all();
+    }
+
     $view = Twig::fromRequest($request);
     return $view->render($response, 'contacts.html.twig', [
-        'name' => $args['name']
+        'contacts' => $contactsSet,
+        'searchTerm' => $searchTerm
     ]);
 });
 

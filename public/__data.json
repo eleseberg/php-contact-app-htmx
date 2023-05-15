@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "first": "John",
+    "last": "Doe",
+    "phone": "555-1234",
+    "email": "john.doe@example.com"
+  },
+  {
+    "id": 2,
+    "first": "Jane",
+    "last": "Doe",
+    "phone": "555-5678",
+    "email": "jane.doe@example.com"
+  },
+  {
+    "id": 3,
+    "first": "Bob",
+    "last": "Smith",
+    "phone": "555-9012",
+    "email": "bob.smith@example.com"
+  },
+  {
+    "id": 4,
+    "first": "Alice",
+    "last": "Johnson",
+    "phone": "555-3456",
+    "email": "alice.johnson@example.com"
+  },
+  {
+    "id": 5,
+    "first": "Tom",
+    "last": "Jones",
+    "phone": "555-7890",
+    "email": "tom.jones@example.com"
+  },
+  {
+    "id": 6,
+    "first": "Sara",
+    "last": "Lee",
+    "phone": "555-2345",
+    "email": "sara.lee@example.com"
+  },
+  {
+    "id": 7,
+    "first": "Mike",
+    "last": "Brown",
+    "phone": "555-6789",
+    "email": "mike.brown@example.com"
+  },
+  {
+    "id": 8,
+    "first": "Emily",
+    "last": "Davis",
+    "phone": "555-0123",
+    "email": "emily.davis@example.com"
+  },
+  {
+    "id": 9,
+    "first": "Jack",
+    "last": "Smith",
+    "phone": "555-4567",
+    "email": "jack.smith@example.com"
+  },
+  {
+    "id": 10,
+    "first": "Karen",
+    "last": "Johnson",
+    "phone": "555-8901",
+    "email": "karen.johnson@example.com"
+  }
+]
