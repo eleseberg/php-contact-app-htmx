@@ -20,7 +20,7 @@ $app->redirect('/', '/contacts', 301);
 
 $app->get('/contacts', function (Request $request, Response $response, $args) {
 
-    $contacts = new App\model\Contacts();
+    $contacts = new App\model\Contact();
     $searchTerm = '';
     $queryTerms = $request->getQueryParams();
 

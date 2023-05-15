@@ -2,10 +2,16 @@
 
 namespace App\model;
 
-class Contacts
+class Contact
 {
     public string $filePath;
-    public array $contactList;
+
+    /**
+     * mock contacts database
+     *
+     * @var array
+     */
+    public array $db;
 
     /**
      * Constructor
@@ -25,7 +31,7 @@ class Contacts
      */
     public function all(): array
     {
-        return $this->contactList;
+        return $this->db;
     }
 
     /**
@@ -37,7 +43,7 @@ class Contacts
     public function search(string $text): array
     {
         $result = [];
-        foreach ($this->contactList as $record) {
+        foreach ($this->db as $record) {
             if (in_array($text, $record)) {
                 $result[] = $record;
             }
@@ -64,7 +70,7 @@ class Contacts
             throw new \Exception('Error decoding JSON data from ' . $this->filePath);
         } else {
             // Use the $data array as needed
-            $this->contactList = $data;
+            $this->db = $data;
         }
     }
 
