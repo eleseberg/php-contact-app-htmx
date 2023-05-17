@@ -1,13 +1,14 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
-    <h1>Contacts</h1>
+    <h1>Contacts.app PHP</h1>
+    <h2>A Demo Contacts Application</h2>
     <form action="/contacts" method="get" class="tool-bar">
         <label for="search">Search Term</label>
         <input id="search" type="search" name="q" value="{{ searchTerm }}"/>
         <input type="submit" value="Search"/>
     </form>
-    <h2>Contacts List</h2>
+
     <table>
         <thead>
         <tr>
@@ -31,4 +32,8 @@
         {% endfor %}
         </tbody>
     </table>
+
+    <p>
+        <a href="/contacts/new">Add Contact</a>
+    </p>
 {% endblock %}
